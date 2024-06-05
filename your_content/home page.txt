@@ -1,11 +1,134 @@
-<h1>Welcome to comic_git!</h1>
-
-<p>What you're seeing is the default website created by comic_git, a static-site generator hosted FOR FREE on GitHub Pages, that YOU can use to publish your own web comic easily and quickly!</p>
-
-<p>Click <a href="comic/197/#comic-page">here</a> to go to the first page of the sample comic to see how it looks out-of-the-box.<br>
-    You can also click <a href="latest/#comic-page">here</a> to go to the latest page, which will always point to the most recently published comic.</p>
-
-<p>For instructions on how to use comic_git, check out the <a href="https://github.com/ryanvilbrandt/comic_git/wiki">wiki</a>.<br>
-    If you'd like to jump right into creating your own webcomic with comic_git, check out the <a href="https://github.com/ryanvilbrandt/comic_git/wiki/Getting-Started">Getting Started</a> section.</p>
-
-<p>(To edit this page when you're setting up your own website, edit the file <code>/your_content/home page.txt</code>)</p> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+		body {
+			background-image: url(/griffintest/your_content/images/bgimage.jpg);
+			background-repeat:no-repeat;
+			background-size:cover;
+		}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: none;
+            padding: 8px;
+            text-align: center;
+            vertical-align: top;
+        }
+        .news-column {
+            width: 50%;
+        }
+        .image-link img {
+            width: 100%;
+			border-radius: 6px;
+        }
+		.image-link img:hover {
+			-webkit-filter: brightness(70%);
+			-webkit-transition: all 1s ease;
+			-moz-transition: all 1s ease;
+			-o-transition: all 1s ease;
+			-ms-transition: all 1s ease;
+			transition: all 1s ease;
+		}
+		.comicLinks {
+			border-right: 4px black solid;
+		}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <a class="image-link" href="https://mothorialcomic.github.io/griffintest/ah-club/comic/001/">
+                    <img src="/griffintest/your_content/images/banners/ah-club.jpg" alt="Image 1">
+                </a>
+            </td>
+            <td>
+                <a class="image-link" href="#">
+                    <img src="/griffintest/your_content/images/banners/inthenewage.jpg" alt="Image 2">
+                </a>
+            </td>
+            <td>
+                <a class="image-link" href="#">
+                    <img src="/griffintest/your_content/images/banners/inthenewage.jpg" alt="Image 2">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class="image-link" href="https://mothorialcomic.github.io/griffintest/ah-club/comic/001/">
+                    <img src="/griffintest/your_content/images/banners/ah-club.jpg" alt="Image 1">
+                </a>
+            </td>
+            <td>
+                <a class="image-link" href="#">
+                    <img src="/griffintest/your_content/images/banners/inthenewage.jpg" alt="Image 2">
+                </a>
+            </td>
+            <td>
+                <a class="image-link" href="#">
+                    <img src="/griffintest/your_content/images/banners/inthenewage.jpg" alt="Image 2">
+                </a>
+            </td>
+        </tr>
+    </table>
+	<table>
+        <tr>
+            <td>
+                <table class="comicLinks">
+                    <tr>
+                        <td>
+                            <a class="image-link" href="https://mothorialcomic.github.io/griffintest/ah-club/comic/001/">
+                                <img src="/griffintest/your_content/images/banners/ah-club.jpg" alt="Image 1">
+                            </a>
+                        </td>
+                        <td>
+                            <a class="image-link" href="#">
+                                <img src="/griffintest/your_content/images/banners/inthenewage.jpg" alt="Image 2">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="image-link" href="https://mothorialcomic.github.io/griffintest/ah-club/comic/001/">
+                                <img src="/griffintest/your_content/images/banners/ah-club.jpg" alt="Image 1">
+                            </a>
+                        </td>
+                        <td>
+                            <a class="image-link" href="#">
+                                <img src="/griffintest/your_content/images/banners/inthenewage.jpg" alt="Image 2">
+                            </a>
+                        </td>
+                    </tr>
+		    <tr>
+                        <td>
+                            <a class="image-link" href="https://mothorialcomic.github.io/griffintest/ah-club/comic/001/">
+                                <img src="/griffintest/your_content/images/banners/ah-club.jpg" alt="Image 1">
+                            </a>
+                        </td>
+                        <td>
+                            <a class="image-link" href="#">
+                                <img src="/griffintest/your_content/images/banners/inthenewage.jpg" alt="Image 2">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td class="news-column">
+                <h2>NEWS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                <p>Cras vehicula, mauris non tempor aliquam, sapien nisl egestas orci, ac auctor elit sapien nec nisl.</p>
+                <p>Fusce dictum turpis ac sem ullamcorper, non scelerisque felis vehicula. Integer et urna nec urna tincidunt tempor.</p>
+                <p>Donec consectetur, urna eget facilisis suscipit, sapien dui pulvinar leo, eu commodo magna augue ac libero.</p>
+                <p>Sed vel nisl eu lectus mollis tincidunt. Nullam vehicula turpis eu malesuada facilisis.</p>
+                <p>Praesent euismod, libero sit amet tincidunt consectetur, turpis sapien faucibus dui, ut vehicula velit augue non arcu.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
